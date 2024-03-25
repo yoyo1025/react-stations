@@ -1,7 +1,14 @@
-// @ts-check
+export function DogImage ({imageUrl, changePicture}) {
 
-export const DogImage = () => {
-  return <></>
+  return (
+    <div>
+      <p>イヌの画像を表示するサイト</p>
+      <img src={imageUrl} alt="dog" />
+      <div>
+        <button onClick={changePicture}>更新</button>
+      </div>
+    </div>
+  )
 }
 
-export default DogImage
+export default DogImage;
