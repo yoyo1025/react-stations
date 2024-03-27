@@ -1,22 +1,57 @@
 header{
     background-color: #f5f5f5;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
-p{
-    float:left;
+.abc {
+    display: flex;
 }
 
-image{
-    float: right;
+.title{
+    margin: 100px;
+}
+
+
+.random-dog{
+    width: 480px;
+    height: 360px;
+    margin: 50px;
+    margin-left: 200px;
+}
+
+.updateButton{
+    margin-left: 1500px;
 }
 
 button{
-    background-color: rgb(66, 102, 164);
+    background-color: rgb(100, 102, 250);
     color: #f5f5f5;
     padding: 5px;
-    width: 75px;
+    width: 100px;
     height: 45px;
     font-size: 20px;
+}
+
+select{
+    padding: 5px;
+    margin: 10px;
+    width: 600px;
+    height: 35px;
+}
+
+.select-dog-type {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.dog-picture {
+    display: inline-flex;
+    width: 400px;
+    height: 300px;
+    margin: 25px;
+}
+.title {
+    font-size: 3rem;
 }

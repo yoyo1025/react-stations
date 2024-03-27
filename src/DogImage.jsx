@@ -2,10 +2,12 @@ export function DogImage ({imageUrl, changePicture}) {
 
   return (
     <div>
-      <p>イヌの画像を表示するサイト</p>
-      <img src={imageUrl} alt="dog" />
+      <div className="abc">
+        <p className="title">イヌの画像を表示するサイトです</p>
+        <img src={imageUrl} alt="dog" className="random-dog" />
+      </div>
       <div>
-        <button onClick={changePicture}>更新</button>
+        <button onClick={changePicture} className="updateButton">更新</button>
       </div>
     </div>
   )
