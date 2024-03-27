@@ -5,6 +5,7 @@ import BreedsSelect from "./BreedsSelect";
 export const DogListContainer = () => {
   const [breeds, setBreeds] = useState([]);
   const [selectedBreed, setSelectedBreed] = useState("");
+  const [orderedDogs, setOrderedDogs] = useState([]);
 
   useEffect(
     () => {
@@ -17,7 +18,7 @@ export const DogListContainer = () => {
         )
     },[]);
   return (
-    <BreedsSelect breeds={breeds} selectedBreed={selectedBreed} setSelectedBreed={setSelectedBreed}/>
+    <BreedsSelect breeds={breeds} selectedBreed={selectedBreed} setSelectedBreed={setSelectedBreed} orderedDogs={orderedDogs} setOrderedDogs={setOrderedDogs}/>
   )
 }
 
