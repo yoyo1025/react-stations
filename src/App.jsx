@@ -3,7 +3,7 @@ import Header from './Header';
 import Description from './Description';
 import DogListContainer from './DogListContainer';
 
-// テスト
+// テスト2
 export const App = () => {
   return (
     <div>
