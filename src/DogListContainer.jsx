@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import BreedsSelect from "./BreedsSelect";
 // @ts-check
 
 export const DogListContainer = () => {
-  const [breeds, setBreeds] = useState();
+  const [breeds, setBreeds] = useState([]);
+  const [selectedBreed, setSelectedBreed] = useState("");
 
   useEffect(
     () => {
@@ -10,14 +12,15 @@ export const DogListContainer = () => {
         .then(res => res.json())
         .then(
           (result) => {
-            setBreeds(result.message);
+            setBreeds(Object.keys(result.message));
           }
         )
-    }
-    ,
-    []
+    },[]);
+  return (
+    <BreedsSelect breeds={breeds} selectedBreed={selectedBreed} setSelectedBreed={setSelectedBreed}/>
   )
-  return <></>
 }
 
 export default DogListContainer
+
+
